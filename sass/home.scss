@@ -1,0 +1,70 @@
+/************************* Global style Start *************************/
+@import "partials/variable";
+@import "partials/init";
+/************************* Navbar *************************/
+@import "partials/navbar";
+
+/************************* Header *************************/
+.header-slider{
+	.cover{
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: rgba($primary-color,0.6);
+		.content{
+			text-align: center;
+			img{
+				width: 18%;
+				margin-bottom: 1.5rem;
+			}
+			h1{
+				color: #fff;
+				font-weight: 700;
+				font-size: 35pt;
+				margin-bottom: 1.5rem;
+			}
+			.arrow-wrap{
+				-webkit-animation: bounce 2s infinite;
+				animation: bounce 2s infinite;
+				position: absolute;
+				left: 50%;
+				bottom: 5%;
+				z-index: 55;
+				a{
+					img{
+						width: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+@keyframes bounce {
+  	0%, 20%, 50%, 80%, 100% {
+    	-webkit-transform: translateY(0);
+    	transform: translateY(0); 
+    }
+  	40% {
+    	-webkit-transform: translateY(-30px);
+    	transform: translateY(-30px); 
+    }
+  	60% {
+    	-webkit-transform: translateY(-15px);
+    	transform: translateY(-15px); 
+    } 
+}
+/************************* About Section *************************/
+@import "partials/about-section";
+
+/************************* Menu Section *************************/
+@import "partials/menu-section";
+
+/************************* blog Section *************************/
+@import "partials/blog-section";
+
+/************************* contact Section *************************/
+@import "partials/contact";
+
+/************************* footer Section *************************/
+@import "partials/footer";
